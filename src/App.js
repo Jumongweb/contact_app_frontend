@@ -34,6 +34,7 @@ function App() {
         <div className='container'>
           <Routes>
             <Route path='/' element={<Navigate to={'api/v1/contacts/all'} /> } />
+                {/* comment */}
             <Route path="/api/v1/contacts" element={<ContactList data={data} currentPage={currentPage} getAllContacts={getAllContacts} />} />
           </Routes>
         </div>
